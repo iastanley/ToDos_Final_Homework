@@ -1,0 +1,131 @@
+/***********************************
+Things to remember:
+
+Hex codes:
+grey background & hover background: #EEE
+app background: white
+app header & footer background: #222
+color of line-through text: #CCC
+color of EDIT and REMOVE links in list: navy
+
+width of app: 30em
+margin on top: 10px
+padding of app: 2px
+padding of header & footer: 20px
+border-radius: 10px
+padding of to list items: 8px 20px
+
+*************************************/
+
+/*input and button will not be styled if only body was used*/
+body, input, button {
+	font-size: 24px;
+	font-family: sans-serif;
+}
+
+body {
+	background: #EEE;
+	margin: 0;
+	padding: 0;
+}
+
+#app {
+	width: 30em;
+	margin: 10px auto;
+	background: white;
+	padding: 2px;
+	border-radius: 10px;
+	box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+#app header, #app footer {
+	background: black;
+	color: white;
+	padding: 20px;
+}
+
+#app header {
+	border-radius: 10px 10px 0 0;
+}
+
+#app footer {
+	border-radius: 0 0 10px 10px;
+}
+
+/********TO DO LIST STYLING AFTER ITEMS ADDED*******/
+
+#todo-list {
+	background: white;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+#todo-list li {
+	padding: 8px 20px;
+}
+
+/***** hovering and pointer ********/
+
+#todo-list a {
+	/*visibility hides element without removing it*/
+	visibility: hidden;
+	color: navy;
+	margin-left: 1em;
+	font-size: .5em;
+	text-transform: uppercase;
+
+	/*cursor is a pointer on this object*/
+	cursor: pointer;
+}
+
+/*hovering over list causes background color change*/
+#todo-list li:hover {
+	background: #EEE;
+}
+
+/*hovering over the list causes links to become visible*/
+#todo-list li:hover a {
+	visibility: visible;
+}
+
+/*hovering over each link causes underline */
+#todo-list a:hover {
+	text-decoration: underline;
+}
+
+/*for some reason cursor:pointer doesn't need hover*/
+.item {
+	cursor: pointer;
+}
+
+/*class to add with javascript for strikethrough*/
+.item.done {
+	color: #CCC;
+	text-decoration: line-through;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
